@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background: #1E1C2B;
+    min-width:100%;
+    overflow-X:hidden;
+}
+
+/*sidebar design*/
+.sideBar{
+    width: 5%;
+    height: auto;
+    background: #1E1C2B;
+    overflow: hidden;
+    border-right: 1px solid #86828285;
+    position: fixed;
+    float:left;
+    z-index:1;
+}
+/*sideBarIcons wrapper */
+.sideBarIcons {
+    max-width: 100%;
+}
+
+/*IconsFirstList*/
+ul.IconsFirstList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:60%;
+}
+
+ul.IconsFirstList li {
+    list-style: none;
+    
+}
+.lastIcon{
+    border-bottom:1px solid#86828285;
+    padding-bottom:30px;
+}
+
+/*icon design*/
+ul.IconsFirstList li i{
+    width: 13px;
+    height: 13px;
+    color: white;
+    background: #353240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 21px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 13px;
+}
+/*icon hovereffect*/
+ul.IconsFirstList li i:hover{
+    background:#52a8e9;
+}
+/*s icon styling*/
+.fab{
+    color:white;
+    background:#22B07D !important;
+    margin-bottom:40px !important;
+    border-radius:100% !important;
+    -webkit-border-radius:100% !important;
+    -moz-border-radius:100% !important;
+    -ms-border-radius:100% !important;
+    -o-border-radius:100% !important;
+}
+
+
+/*IconsSecondList*/
+
+ul.IconsSecondList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:60%;
+}
+
+ul.IconsSecondList li {
+    list-style: none;
+    
+}
+
+/*icon design*/
+ul.IconsSecondList li i{
+    width: 13px;
+    height: 13px;
+    color: white;
+    background: #353240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 21px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 13px;
+}
+/*icon hovereffect*/
+ul.IconsSecondList li i:hover{
+    background:#52a8e9;
+}
+.IconsSecondList:last-child:after{
+    content:" ";
+    width:44px;
+    height:2px;
+    background:#86828285;
+    margin-top:20px;
+}
+
+
+
+
+/*IconsSecondList*/
+
+ul.IconsthirdList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:60%;
+}
+
+ul.IconsthirdList li {
+    list-style: none;
+    
+}
+
+/*icon design*/
+ul.IconsthirdList li i{
+    width: 13px;
+    height: 13px;
+    color: white;
+    background:#6C5ECF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 131px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-size: 13px;                     
+    
+   
+}
+/*icon hovereffect*/
+ul.IconsthirdList li i:hover{
+    background:#52a8e9;
+}
+
+
+
+/* Header section*/
+
+header.searchbarHeader {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 60px;
+    background:linear-gradient(to right ,#1e1c2b 30%,#1e1c2bd2,#1e1c2be3),linear-gradient(to bottom ,#1e1c2b38 50%,#1e1c2bb2,#1e1c2be3), url(images/headerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    height: 181px;
+    position: relative;
+   
+}
+
+.container{
+    width: 1160px;
+    margin: auto;
+}
+
+
+
+/*search box*/
+.searchBox {
+    min-width: 697px;
+    float: left;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+
+.searchBox input {
+    width: 87%;
+    height: 18px;
+    background: #34323F;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 11px;
+    outline: none;
+    float: left;
+    color: white;
+}
+/* searach icon*/
+.searchBox i {
+    color: rgb(136 136 136);
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+}
+
+.searchBox input::placeholder{
+    color:#707080;
+}
+
+
+/*profile box*/
+.profileBox {
+    min-width: 300px;
+   display:flex;
+   flex-direction:row;
+   justify-content: flex-end;
+   align-items:center;
+   margin-right:80px;
+}
+/*profile image*/
+.profileImage img{
+    width: 35px;
+    height: 35px;
+    float: left;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-right: 13px;
+}
+/*profile name*/
+.profilename span {
+    color: white;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:300;
+    margin-right:12px;
+}
+/*profile down arrow*/
+.profileDownArrow{
+    float:left;
+}
+.profileDownArrow i{
+    color:rgba(255, 255, 255, 0.452);
+    margin-top: 6px;
+}
+/*notification bell*/
+.notification.Bell {
+    min-width: 100px;
+    display:flex;
+   flex-direction:row;
+   justify-content: flex-end;
+   align-items:center;
+   margin-top: -29px;
+   position:relative;
+
+}
+.notification.Bell i{
+    color:white;
+    font-size:21px;
+}
+
+
+/*Video and Chat section*/
+.Video-chat-Section{
+    width: 100%;
+    overflow-x: hidden;
+    height: 400px;
+    position: relative;
+    margin-top: -104px;
+}
+.videoDivision{
+    width:61%;
+    height:400px;
+    float:left;
+    position: relative;
+
+}
+.videoDivision video{
+    width:700px;
+    height:390px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    outline: none;
+}
+
+/*Chat division*/
+.chatDivision {
+    width: 33%;
+    float: left;
+    height: 400px;
+    border-radius: 35px;
+    margin-left: 65px;
+
+}
+
+.chatspaces {
+    box-sizing: border-box;
+    padding: 26px;
+    background: #2e344e;
+    border-radius: 15px;
+    width: 360px;
+    margin-left: 40px;
+    overflow-y: scroll;
+    height: 400px;
+}
+.chatspaces::-webkit-scrollbar {
+    width: 5px; 
+    
+}
+.chatspaces::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+     
+    
+}
+
+  
+.liveChatHeading {
+    width: 16%;
+    height: 50px;
+    border-bottom: 1px solid rgb(136 136 136 / 20%);
+    position: fixed;
+    background: #2e344e;
+    margin-top: -27px;
+}
+
+.headingText {
+    width: 62%;
+    float: left;
+    margin-top: 14px;
+}
+
+.headingText h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.userIconDivision {
+    width: 38%;
+    float: left;
+    margin-top: 14px;
+}
+
+.userIconDivision i {
+    color: #ffffff78;
+    font-size: 12px;
+}
+
+.userIconDivision span {
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff78;
+    font-size: 14px;
+}
+
+.person1Image {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.person1Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.person1Box {
+    margin-top: 36px;
+    width: 100%;
+    float: left;
+}
+
+.person1Name\&Message {
+    width: 250px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 7px;
+    margin-top: -4px;
+}
+.person1Name\&Message h3 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.person1Name\&Message p {
+    font-family: system-ui;
+    font-size: 13px;
+    color:rgba(255, 255, 255, 0.438);
+    padding-top:5px;
+}
+.person1Image i {
+    color: #0594ff;
+    font-size: 13px;
+    position: relative;
+    top: -19px;
+    left: 36px;
+    box-shadow: 0px 0px 10px 0px #00000008;
+}
+
+/*chat box*/
+.chatBox {
+    width: 17%;
+      height: 69px;
+    position: fixed;
+    top: 49.7%;
+    margin-left: -7px;
+    background: #2e344e;
+}
+
+.chatBox input {
+    width: 318px;
+    background: #34323F;
+    height: 22px;
+    border-radius: 21px;
+    padding: 23px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 8px;
+    padding-left: 53px;
+}
+
+.chatBox i {
+    position: absolute;
+    bottom: 22px;
+    left: 10px;
+    background: #4d4b54;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6px;
+    color: #ffffff9e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+i.fas.fa-paper-plane {
+    left: 275px;
+    background: #6C5ECF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+i.fas.fa-paper-plane:hover{
+    background:#0594ff;
+}
+
+/*description section*/
+section.desandRelatedSection {
+    width: 100%;
+    height: 372px;
+    overflow: hidden;
+    
+}
+
+.videoDescription {
+    width: 60%;
+    height: 400px;
+    float:left;
+}
+
+/*chaneel Name division*/
+.videoNameandDecriptionBox {
+    width: 58%;
+    margin-top: 29px;
+    float:left;
+}
+
+.VideoGrapherName {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+/*image of channel*/
+.VideoGrapherImage {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.VideoGrapherImage img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+/*Channel Name*/
+.nameOFchannel {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+.nameOFchannel h3 {
+    color: wheat;
+    color: white;
+    font-weight: 400;
+    font-family: system-ui;
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+.nameOFchannel span {
+    color: rgb(136 136 136);
+    font-family: system-ui;
+    font-size: 14px;
+    margin-left:-10px;
+}
+/*active*/
+.nameOFchannel i {
+    color: #1e981e;
+    position: relative;
+    top: -22px;
+    font-size: 7px;
+    left: 42%;
+}
+
+/*verify badge*/
+img.check {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -24px;
+    left: 31px;
+    object-fit: cover;
+}
+
+/*description*/
+
+.mainDecOfVideo {
+    width: 100%;
+}
+
+.description-heading {
+    width: 100%;
+}
+
+.description-heading h1 {
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/*sub heading*/
+
+.subHeadingOfVideoDec p {
+    color: #ffffff6b;
+    font-size: 11px;
+    font-family: system-ui;
+    padding-bottom:18px;
+}
+
+.subHeadingOfVideoDec {
+    margin-top: 21px;
+}
+
+/*reacts Division*/
+.reactsDivision {
+    width: 42%;
+    float: left;
+    margin-top: 33px;
+}
+
+.likeBtnandShareBtn {
+    width: 100%;
+}
+
+.shareBtn {
+    width: 90px;
+    float: left;
+    height: 21px;
+    background: #34323f;
+    padding: 11px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-right: 18px;
+    margin-left: 47px;
+}
+
+
+.shareBtn i {
+    color: white;
+    font-size: 16px;
+    margin-left: 9px;
+}
+
+.shareBtn span {
+    margin-left: 4px;
+    color: white;
+    font-family: 'Ubuntu';
+}
+
+/*like button*/
+
+.likeBtn {
+    width: 90px;
+    float: left;
+    height: 21px;
+    background: #EA5F5F;
+    padding: 11px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.likeBtn {
+    width: 93px;
+    float: left;
+}
+
+.likeBtn i {
+    color: white;
+    font-size: 16px;
+    margin-left: 9px;
+}
+
+.likeBtn span {
+    margin-left: 4px;
+    color: white;
+    font-family: 'Ubuntu';
+}
+
+.subReactDes {
+    width: 100%;
+}
+
+ul.subReactInfo {
+    width: 253px;
+    margin-left: 47px;
+    padding-top: 82px;
+}
+
+ul.subReactInfo li {
+    list-style: none;
+    color: rgb(136 136 136);
+    padding-bottom: 16px;
+}
+
+ul.subReactInfo li i {
+    font-size: 14px;
+}
+
+ul.subReactInfo li span {
+    font-size: 12px;
+    font-family: system-ui;
+    padding-left: 12px;
+}
+
+/*related video section*/
+.relatedVideosDivision {
+    width: 348px;
+    float: left;
+    margin-left: 113px;
+    margin-top: 33px;
+    height: 379px;
+    overflow-x:hidden;
+}
+.relatedVideosDivision::-webkit-scrollbar {
+    display:none;             
+  }
+
+
+
+.heading h1 {
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 26px;
+}
+
+/*video title*/
+.realtedVideo.heading {
+    position: fixed;
+    background: #1e1c2b;
+    width: 310px;
+}
+.relatiedvideos {
+    overflow-y: scroll;
+    width: 400px;
+}
+
+.rVideos {
+    width: 100%;
+    padding-top: 46px;
+}
+
+.iframeVideo {
+    width: 120px;
+    float: left;
+}
+
+.iframeVideo iframe {
+    border-radius: 18px;
+}
+
+.videotitle1 {
+
+    width: 213px;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 18px;
+}
+
+.videotitle1 span {
+    color: #968a8a;
+    font-family: system-ui;
+    font-size: 13px;
+}
+.videotitle1 h4{
+    color:white;
+    font-family:system-ui;
+    font-size:15px;
+    margin-bottom:-16px;
+}
+.videotitle1 i{
+    color:#968a8a;
+    font-size:5px;
+}
+
+/*related btn */
+
+.relatedvidoesBtn {
+    width: 20%;
+    height: 153px;
+    background: #1e1c2b;
+    position: fixed;
+    bottom: 4px;
+}
+
+
+.relatedvidoesBtn button {
+    width: 364px;
+    height: 49px;
+    margin-left: 2px;
+    color: white;
+    background: #6c5ecf;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-top: 19px;
+    font-family: system-ui;
+    font-size: 16px;
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+}
+.relatedvidoesBtn button:hover{
+    background: #52a8e9;
+}
